@@ -1,3 +1,5 @@
+import { link } from "fs";
+
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
@@ -72,35 +74,63 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
+    title: "Masters-Thesis-Generative-AI-Paradoxes",
+    des: "Conducted comprehensive literature reviews on AI paradoxes, emphasizing on Generative AI, creativity paradox, bias amplification vs feedback loop and productivity vs realism. Formulated those paradoxes, designing and executing controlled experiments to demonstrate paradoxes' impact on decision-making processes in organizational context and analyzing outcomes.",
     img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    iconLists: ["/Python.png", "/jupyter.png"],
     link: "/ui.earth.com",
+    live: "https://github.com/AnugyaSahu/Masters-Thesis-Generative-AI-Paradoxes?tab=readme-ov-file#masters-thesis-generative-ai-paradoxes",
+    year: "2024",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+    title: "Explainable Machine learning Exercises",
+    des: "Random Forest predicts, Adjusted R2 adjusts; Lasso effect plot; test interactions, linear regression assumptions; logistic regression, odds ratio; decision trees, MDI; RuleFit, CART rules in Lasso; support attribute; PDP, ICE, M-plot, ALE, permutation importance; local post-hoc, counterfactuals, LIME, SHAP, Kernel SHAP.",
+    img: "/RF3.png",
+    iconLists: ["/Python.png", "/jupyter.png"],
     link: "/ui.yoom.com",
+    live: "https://github.com/AnugyaSahu/Explainable-Machine-Learning",
+    year: "2023",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+    title: "Combinatorial-problems-with-Transformers",
+    des: "Finding an optimal solution to Travelling Salesman Problem",
+    img: "/TS.png",
+    iconLists: ["/Python.png", "/jupyter.png"],
     link: "/ui.aiimg.com",
+    live: "https://github.com/AnugyaSahu/Combinatorial-problems-with-Transformers",
+    year: "2023",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    title: "DL-Scratch-and-Solar-Panel-Image-Project",
+    des: "Feed forward Neural Networks, Convolutional Neural Networks, Recurrent Neural Networks written using numpy library including Pooling layers, Activation functions, Optimization layers, Batch normalization from scratch.",
+    img: "/FN.webp",
+    iconLists: ["/Python.png", "/jupyter.png"],
     link: "/ui.apple.com",
+    live: "https://github.com/AnugyaSahu/DL-Scratch-and-Solar-Panel-Image-Project",
+    year: "2023",
+  },
+  {
+    id: 5,
+    title: "Data-Science-Survival-Skills-Turtle-project",
+    des: "In Python, turtle graphics provides a representation of a physical “turtle” (a little robot with a pen) that draws on a sheet of paper on the floor.",
+    img: "/TG.jpg",
+    iconLists: ["/Python.png", "/jupyter.png"],
+    link: "/ui.apple.com",
+    live: "https://github.com/AnugyaSahu/Data-Science-Survival-Skills-Turtle-project",
+    year: "2022",
+  },
+  {
+    id: 6,
+    title: "GitHub Repository",
+    des: "Explore all the projects that I have done till date.",
+    img: "/GH.webp",
+    iconLists: ["/Python.png", "jupyter.png"],
+    link: "/ui.apple.com",
+    live: "https://github.com/AnugyaSahu?tab=repositories",
+    year: "2024",
   },
 ];
 
@@ -173,31 +203,35 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Werkstudent in Data Science - Siemens Healthineers",
+    desc: "lorem ispaofonnaiubfuvuheafuvuvacibuavsuyvhvfauvyvyuvidi",
     className: "md:col-span-2",
-    thumbnail: "/exp1.svg",
+    thumbnail: "/SH.svg.png",
+    date: "Apr 2024 - Present",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    title: "FAU Erlangen - Nürnberg",
+    desc: "Student Tutor : Tutor for the Knowledge Discovery Databases module",
     className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp2.svg",
+    thumbnail: "/FAU.png",
+    date: "Feb 2024 - Present",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
+    title: "Werkstudent Analyst - Siemens AG ",
     desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
     className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
+    thumbnail: "/Siemens-logo.svg.png",
+    date: "Mar 2023 - Mar 2024",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
+    title: "Application Development Associate - Accenture",
     desc: "Developed and maintained user-facing features using modern frontend technologies.",
     className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
+    thumbnail: "/Accenture.png",
+    date: "Mar 2022 - Sept 2022",
   },
 ];
 
@@ -205,13 +239,16 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link: "https://github.com/anugyasahu",
   },
   {
     id: 2,
     img: "/twit.svg",
+    link: "https://github.com/anugyasahu",
   },
   {
     id: 3,
     img: "/link.svg",
+    link: "https://www.linkedin.com/in/anugya-sahu-806b2b186/",
   },
 ];
