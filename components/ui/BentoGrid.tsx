@@ -144,17 +144,20 @@ export const BentoGridItem = ({
           <div
             className={`font-sans text-lg lg:text-3xl max-w-[26rem] font-bold z-10`}
           >
-            {title}
+            {id === 4 ? (
+              <a
+                href="https://github.com/AnugyaSahu/Masters-Thesis-Generative-AI-Paradoxes"
+                target="_blank"
+              >
+                {title}
+              </a>
+            ) : (
+              title
+            )}
           </div>
 
           {/* for the github 3d globe */}
           {id === 2 && <GridGlobe />}
-          {id === 4 && (
-            <a
-              href="https://github.com/AnugyaSahu/Masters-Thesis-Generative-AI-Paradoxes"
-              target="_blank"
-            ></a>
-          )}
 
           {/* Tech stack list div */}
           {id === 2 && (
