@@ -3,6 +3,8 @@ import { FaLocationArrow } from "react-icons/fa6";
 import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import { socialMedia } from "@/data";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -60,14 +62,18 @@ const Hero = () => {
             Hi! I&apos;m Anugya Sahu, Werkstudent in Data Science at Siemens
             Healthineers.
           </p>
-
-          <a href="https://github.com/AnugyaSahu">
-            <MagicButton
-              title="Show my work"
-              icon={<FaLocationArrow />}
-              position="right"
-            />
-          </a>
+          <div className="flex items-center md:gap-3 gap-6 mt-16">
+            {socialMedia.map((info) => (
+              <Link target="_blank" key={info.id} href={info.link}>
+                <div
+                  key={info.id}
+                  className="w-14 h-14 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
+                >
+                  <img src={info.img} alt="icons" width={30} height={30} />
+                </div>
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     </div>

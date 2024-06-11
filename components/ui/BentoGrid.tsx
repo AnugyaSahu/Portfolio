@@ -6,7 +6,6 @@ import Lottie from "react-lottie";
 
 import { cn } from "@/lib/utils";
 
-
 import { BackgroundGradientAnimation } from "./GradientBg";
 import GridGlobe from "./GridGlobe";
 import animationData from "@/data/confetti.json";
@@ -52,8 +51,9 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["ReactJS", "Express", "Typescript"];
-  const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
+  const leftLists = ["Python", "Java", "C#"];
+  const rightLists = ["Excel VBA", "Azure ML-Ops", "Azure Dev-ops"];
+  const lastList = ["Microsoft SQL server", "Power BI", "Microsoft office"];
 
   const [copied, setCopied] = useState(false);
 
@@ -67,7 +67,7 @@ export const BentoGridItem = ({
   };
 
   const handleCopy = () => {
-    const text = "hsu@jsmastery.pro";
+    const text = "anugyasahu1@gmail.com";
     navigator.clipboard.writeText(text);
     setCopied(true);
   };
@@ -90,28 +90,39 @@ export const BentoGridItem = ({
       {/* add img divs */}
       <div className={`${id === 6 && "flex justify-center"} h-full`}>
         <div className="w-full h-full absolute">
-          {img && (
+          {id != 3 && img && (
             <img
               src={img}
               alt={img}
               className={cn(imgClassName, "object-cover object-center ")}
             />
           )}
+          {id == 3 && (
+            <img
+              src={img}
+              alt={img}
+              className={cn(
+                imgClassName,
+                "ml-64 mt-16 lg:ml-[24rem] lg:mt-16 right-0 w-[20%]"
+              )}
+            />
+          )}
         </div>
         <div
-          className={`absolute right-0 -bottom-5 ${id === 5 && "w-full opacity-80"
-            } `}
+          className={`absolute right-0 -bottom-5 ${
+            id === 5 && "w-full opacity-80"
+          } `}
         >
-          {spareImg && (
+          {/* {spareImg && (
             <img
               src={spareImg}
               alt={spareImg}
               //   width={220}
               className="object-cover object-center w-full h-full"
             />
-          )}
+          )} */}
         </div>
-        {id === 6 && (
+        {id === 5 && (
           // add background animation , remove the p tag
           <BackgroundGradientAnimation>
             <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl"></div>
@@ -131,7 +142,7 @@ export const BentoGridItem = ({
           {/* add text-3xl max-w-96 , remove text-neutral-600 dark:text-neutral-300*/}
           {/* remove mb-2 mt-2 */}
           <div
-            className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10`}
+            className={`font-sans text-lg lg:text-3xl max-w-[26rem] font-bold z-10`}
           >
             {title}
           </div>
@@ -140,14 +151,14 @@ export const BentoGridItem = ({
           {id === 2 && <GridGlobe />}
 
           {/* Tech stack list div */}
-          {id === 3 && (
-            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
+          {id === 2 && (
+            <div className="flex gap-1 mr-5 flex-col lg:gap-5 w-fit absolute bottom-1 lg:bottom-10">
               {/* tech stack lists */}
-              <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
+              <div className="flex flex-row gap-3 md:gap-3 lg:gap-8">
                 {leftLists.map((item, i) => (
                   <span
                     key={i}
-                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
+                    className="lg:py-4 lg:px-3 py-2 px-3 text-[0.5rem] lg:text-base opacity-50 
                     lg:opacity-100 rounded-lg text-center bg-[#10132E]"
                   >
                     {item}
@@ -155,29 +166,42 @@ export const BentoGridItem = ({
                 ))}
                 <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
               </div>
-              <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
+              <div className="flex flex-row gap-3 md:gap-3 lg:gap-8">
                 <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
                 {rightLists.map((item, i) => (
                   <span
                     key={i}
-                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
+                    className="lg:py-4 lg:px-3 py-2 px-3 text-[0.5rem] lg:text-base opacity-50 
                     lg:opacity-100 rounded-lg text-center bg-[#10132E]"
                   >
                     {item}
                   </span>
                 ))}
               </div>
+              <div className="flex flex-row gap-3 md:gap-3 lg:gap-8">
+                {lastList.map((item, i) => (
+                  <span
+                    key={i}
+                    className="lg:py-4 lg:px-3 py-2 px-3 text-[0.5rem] lg:text-base opacity-50 
+                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                  >
+                    {item}
+                  </span>
+                ))}
+                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
+              </div>
             </div>
           )}
-          {id === 6 && (
+          {id === 5 && (
             <div className="mt-5 relative">
               {/* button border magic from tailwind css buttons  */}
               {/* add rounded-md h-8 md:h-8, remove rounded-full */}
               {/* remove focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 */}
               {/* add handleCopy() for the copy the text */}
               <div
-                className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
-                  }`}
+                className={`absolute -bottom-5 right-0 ${
+                  copied ? "block" : "block"
+                }`}
               >
                 {/* <img src="/confetti.gif" alt="confetti" /> */}
                 <Lottie options={defaultOptions} height={200} width={400} />
