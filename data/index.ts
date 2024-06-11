@@ -167,7 +167,7 @@ export const socialMedia = [
   {
     id: 2,
     img: "/LC.svg",
-    link: "https://github.com/anugyasahu",
+    link: "https://leetcode.com/u/mas197067/",
   },
   {
     id: 3,

@@ -88,7 +88,7 @@ export const BentoGridItem = ({
       }}
     >
       {/* add img divs */}
-      <div className={`${id === 6 && "flex justify-center"} h-full`}>
+      <div className={`${id === 5 && "flex justify-center"} h-full`}>
         <div className="w-full h-full absolute">
           {id != 3 && img && (
             <img
@@ -110,7 +110,7 @@ export const BentoGridItem = ({
         </div>
         <div
           className={`absolute right-0 -bottom-5 ${
-            id === 5 && "w-full opacity-80"
+            id === 4 && "w-full opacity-80"
           } `}
         >
           {/* {spareImg && (
@@ -149,6 +149,12 @@ export const BentoGridItem = ({
 
           {/* for the github 3d globe */}
           {id === 2 && <GridGlobe />}
+          {id === 4 && (
+            <a
+              href="https://github.com/AnugyaSahu/Masters-Thesis-Generative-AI-Paradoxes"
+              target="_blank"
+            ></a>
+          )}
 
           {/* Tech stack list div */}
           {id === 2 && (

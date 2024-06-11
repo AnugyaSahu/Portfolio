@@ -2,7 +2,6 @@
 
 import { FaLocationArrow } from "react-icons/fa6";
 
-import { projects } from "@/data";
 import { PinContainer } from "./ui/Pin";
 import Link from "next/link";
 
@@ -33,8 +32,8 @@ const LeetCode = () => {
               />
             </div>
             <div className="flex flex-col">
-              <h1 className="font-bold lg:text-xl md:text-l text-base line-clamp-1">
-                {"LeetCodeSolutions with Python"}
+              <h1 className="font-bold lg:text-xl md:text-l text-base">
+                {"LeetCode Solutions with Python"}
               </h1>
 
               <p

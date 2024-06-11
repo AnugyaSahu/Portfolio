@@ -44,7 +44,7 @@ const RecentProjects = () => {
                   />
                 </div>
 
-                <h1 className="font-bold lg:text-xl md:text-l text-base line-clamp-1">
+                <h1 className="font-bold lg:text-xl md:text-l text-base ">
                   {item.title}
                 </h1>
 
@@ -113,7 +113,7 @@ const RecentProjects = () => {
                   />
                 </div>
 
-                <h1 className="font-bold lg:text-xl md:text-l text-base line-clamp-1">
+                <h1 className="font-bold lg:text-xl md:text-l text-base ">
                   {item.title}
                 </h1>
 
@@ -182,7 +182,7 @@ const RecentProjects = () => {
                   />
                 </div>
 
-                <h1 className="font-bold lg:text-xl md:text-l text-base line-clamp-1">
+                <h1 className="font-bold lg:text-xl md:text-l text-base">
                   {item.title}
                 </h1>
 
