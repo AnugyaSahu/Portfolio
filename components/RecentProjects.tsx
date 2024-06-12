@@ -11,7 +11,7 @@ import MagicButton from "./MagicButton";
 const RecentProjects = () => {
   return (
     <div id="projects" className="py-20">
-      <h1 className="heading">
+      <h1 className="heading mb-5">
         A small selection of{" "}
         <span className="text-purple">recent projects</span>
       </h1>

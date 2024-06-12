@@ -11,7 +11,7 @@ const LeetCode = () => {
     img: "/p2.svg",
   };
   return (
-    <div className=" flex items-center justify-center ">
+    <div className=" flex items-center justify-center mb-5">
       <PinContainer title={"2024"}>
         <Link
           href={"https://github.com/AnugyaSahu/LeetCode-Problems"}
