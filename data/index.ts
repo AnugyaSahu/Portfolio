@@ -45,7 +45,8 @@ export const gridItems = [
     title: "Currently working on Generative AI and Different models",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
-    imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
+    imgClassName:
+      "absolute right-0 bottom-0 opacity-30 sm:opacity-90 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
     img: "/CropCode.jpg",
     spareImg: "/grid.svg",
@@ -127,7 +128,7 @@ export const workExperience = [
   {
     id: 1,
     title: "Werkstudent in Data Science - Siemens Healthineers",
-    desc: "lorem ispaofonnaiubfuvuheafuvuvacibuavsuyvhvfauvyvyuvidi",
+    desc: "lorem is slfgeih hahfu ihaeiufhi  iuihfea huhfa",
     className: "md:col-span-2",
     thumbnail: "/SH.svg.png",
     date: "Apr 2024 - Present",

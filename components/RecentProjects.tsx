@@ -15,8 +15,10 @@ const RecentProjects = () => {
         A small selection of{" "}
         <span className="text-purple">recent projects</span>
       </h1>
+
       <LeetCode />
-      <h2 className="text-2xl ml-32 mt-10">
+
+      {/* <h2 className="text-2xl ml-32 mt-10">
         <span className="text-purple ">2024</span>
       </h2>
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 ">
@@ -84,7 +86,10 @@ const RecentProjects = () => {
             </PinContainer>
           </div>
         ))}
-      </div>
+      </div> */}
+
+      {/* ----------------------------------------For Year 2023---------------------------------------------------- */}
+
       <h2 className="text-2xl ml-32 mt-10">
         <span className="text-purple ">2023</span>
       </h2>
@@ -154,6 +159,9 @@ const RecentProjects = () => {
           </div>
         ))}
       </div>
+
+      {/* ----------------------------------For Year 2022 ------------------------------------------------------------*/}
+
       <h2 className="text-2xl ml-32 mt-10">
         <span className="text-purple ">2022</span>
       </h2>
@@ -223,7 +231,10 @@ const RecentProjects = () => {
           </div>
         ))}
       </div>
-      <div className="flex justify-center relative  z-10">
+
+      {/* ----------------------Show all button------------------- */}
+
+      <div className="flex justify-center relative mt-7  z-10">
         <a target="_blank" href="https://github.com/AnugyaSahu">
           <MagicButton
             title="Show all projects"

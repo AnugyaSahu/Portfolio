@@ -25,10 +25,10 @@ const Clients = () => {
           />
         </div> */}
 
-        <div className="flex flex-wrap items-center justify-center mt-20 gap-4 md:gap-16 max-lg:mt-10">
+        <div className="flex flex-wrap items-center justify-center mt-20 gap-14 md:gap-16 max-lg:mt-10">
           {companies.map((company) => (
             <React.Fragment key={company.id}>
-              <div className="flex md:max-w-60 max-w-32 gap-2">
+              <div className="flex md:max-w-60 max-w-36 gap-2">
                 <img
                   src={company.img}
                   alt={company.name}
@@ -40,7 +40,7 @@ const Clients = () => {
                   width={company.id === 4 || company.id === 5 ? 100 : 150}
                   className="md:w-24 w-20"
                 /> */}
-                <p className="text-4xl">{company.name}</p>
+                <p className="text-2xl md:text-4xl">{company.name}</p>
               </div>
             </React.Fragment>
           ))}

@@ -17,8 +17,8 @@ const LeetCode = () => {
           href={"https://github.com/AnugyaSahu/LeetCode-Problems"}
           target="_blank"
         >
-          <div className="flex flex-row gap-6 justify-center items-center">
-            <div className="relative flex items-center justify-center sm:w-72 w-[80vw] overflow-hidden h-[17vh] lg:h-[25vh]">
+          <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
+            <div className="relative flex items-center justify-center sm:w-72 md:w-80 lg:w-96 w-[80vw] overflow-hidden h-[17vh] lg:h-[25vh]">
               <div
                 className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                 style={{ backgroundColor: "#13162D" }}
@@ -28,7 +28,7 @@ const LeetCode = () => {
               <img
                 src={"/LC.png"}
                 alt="cover"
-                className="z-10 h-full absolute bottom-0 rounded-xl"
+                className="z-10 w-full h-full absolute bottom-0 rounded-xl"
               />
             </div>
             <div className="flex flex-col">
