@@ -11,7 +11,7 @@ export const gridItems = [
   {
     id: 1,
     title:
-      "As a Data Scientist, I prioritize client collaboration and fostering open communication to ensure succesfull delivery of data driven solutions.",
+      "As a Data Scientist, I am experienced in state-of-the-art technologies and working independently. I strive to get actionable insights for strategic decision-making.",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full opacity-20",
@@ -31,7 +31,7 @@ export const gridItems = [
   },
   {
     id: 3,
-    title: "Currently Learning German at B2.1",
+    title: "Currently Learning German at B2",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -42,7 +42,7 @@ export const gridItems = [
 
   {
     id: 4,
-    title: "Currently working on Generative AI and Different models",
+    title: "Currently working on Generative AI and Diffusion models",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName:
@@ -128,15 +128,15 @@ export const workExperience = [
   {
     id: 1,
     title: "Werkstudent in Data Science - Siemens Healthineers",
-    desc: "lorem is slfgeih hahfu ihaeiufhi  iuihfea huhfa",
+    desc: "Project - Model Order Reduction with Deep Neural Networks",
     className: "md:col-span-2",
     thumbnail: "/SH.svg.png",
     date: "Apr 2024 - Present",
   },
   {
     id: 2,
-    title: "FAU Erlangen - Nürnberg",
-    desc: "Student Tutor : Tutor for the Knowledge Discovery Databases module",
+    title: "Student Tutor - FAU Erlangen-Nuremberg",
+    desc: "Module - Knowledge discovery in databases in Department of Informatik",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/FAU2.svg",
     date: "Feb 2024 - Present",
@@ -144,7 +144,7 @@ export const workExperience = [
   {
     id: 3,
     title: "Werkstudent Analyst - Siemens AG ",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    desc: "Projects - Sustainability project, Knowledge graphs",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/Siemens-logo.svg.png",
     date: "Mar 2023 - Mar 2024",
@@ -152,7 +152,7 @@ export const workExperience = [
   {
     id: 4,
     title: "Application Development Associate - Accenture",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    desc: "Developed and maintained backend framework using C# and Microsof SQL Server",
     className: "md:col-span-2",
     thumbnail: "/Accenture.png",
     date: "Mar 2022 - Sept 2022",
