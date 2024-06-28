@@ -31,7 +31,7 @@ export const gridItems = [
   },
   {
     id: 3,
-    title: "Currently Learning German at B2",
+    title: "Simultaneously Learning German at B2",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
